@@ -34,7 +34,7 @@ func main() {
 	fmt.Scan(&p)
 	fmt.Scan(&q)
 
-	for p < q {
+	for p <= q {
 		is := kaprekar(p)
 		if is {
 			fmt.Printf("%v ", p)

@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	var (
 		t uint // Numero de casos
-		k int // Requeridos
+		k int  // Requeridos
 		n uint // Numero de alumnos
 		a int  // llegadas
 		i uint

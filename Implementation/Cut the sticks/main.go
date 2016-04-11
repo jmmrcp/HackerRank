@@ -27,7 +27,6 @@ func Sticks(s []uint) []uint {
 				a = append(a, d)
 			}
 		}
-		//fmt.Printf("l: %d, slice: %d", len(s), a)
 		fmt.Println(len(s))
 		return Sticks(a)
 	}
@@ -47,8 +46,5 @@ func main() {
 		fmt.Scanf("%d", &l)
 		a[i] = l
 	}
-	//fmt.Println(a)
-	//fmt.Println(Cut(a))
-	//fmt.Println(Sticks(a))
 	Sticks(a)
 }

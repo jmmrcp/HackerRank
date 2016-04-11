@@ -1,13 +1,7 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
-func numCuadrados(x uint32, y uint32) {
-	fmt.Println(math.Floor(math.Sqrt(float64(y))) - math.Floor(math.Sqrt(float64(x-1))))
-}
 func main() {
 	var (
 		t  uint   // Numero de casos
@@ -20,6 +14,5 @@ func main() {
 	for i = 0; i < t; i++ {
 		fmt.Scanf("%d", &n1)
 		fmt.Scanf("%d", &n2)
-		numCuadrados(n1, n2)
 	}
 }

@@ -2,10 +2,23 @@ package main
 
 import "fmt"
 
-func chocolate(N, C, M uint) {
-	n := N / C
-	fmt.Printf("He can buy %d chocolates with %d and excange the %d wrapper. Total: %d.\n", N/C, N, M, n)
+func promo(x, y uint) uint {
+	if x >= y {
+		var a, b, c uint
+		a = x / y
+		b = x % y
+		c = 0
+		if a+b >= y {
+			c = promo(a+b, y)
+		} else if a+b < y {
+			return a
+		}
+		return a + c
+	} else {
+		return 0
+	}
 }
+
 func main() {
 	var (
 		T uint // Numero de casos
@@ -21,6 +34,8 @@ func main() {
 		fmt.Scanf("%d", &C)
 		fmt.Scanf("%d", &M)
 
-		chocolate(N, C, M)
+		c := N / C
+
+		fmt.Println(c + promo(c, M))
 	}
 }

@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func Multiples(N uint) {
+func Multiples(N uint64) {
 	N = (N - 1)
 	n := float64(N)
 	var (
@@ -24,9 +24,9 @@ func Multiples(N uint) {
 
 func main() {
 	var (
-		T uint
-		N uint
-		i uint
+		T uint64
+		N uint64
+		i uint64
 	)
 	fmt.Scanf("%d", &T)
 	for i = 0; i < T; i++ {

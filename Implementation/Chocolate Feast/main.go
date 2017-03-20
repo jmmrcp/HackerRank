@@ -14,9 +14,8 @@ func promo(x, y uint) uint {
 			return a
 		}
 		return a + c
-	} else {
-		return 0
 	}
+	return 0
 }
 
 func main() {

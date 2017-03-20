@@ -9,6 +9,6 @@
     "go.useCodeSnippetsOnFunctionSuggest": false,
     "go.formatOnSave": false,
     "go.formatTool": "goimports",
-    "go.goroot": "/home/johnharvard/.gvm/gos/go1.6",
-    "go.gopath": "/home/johnharvard"
+    "go.goroot": "/home/jose/.gvm/gos/go1.8",
+    "go.gopath": "/home/jose/.gvm/pkgsets/go1.8/global"
 }
